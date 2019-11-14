@@ -1,0 +1,38 @@
+Create table tblGrocery_
+(
+    ID int primary key identity,
+    GroceryID nvarchar(50),
+    GroceryCategory nvarchar(50),
+    ProductName nvarchar(50),
+    ProductDescription nvarchar(50),
+    QTY nvarchar(50),
+    ProductImageUrl nvarchar(MAX)
+   
+)
+Go
+
+
+
+
+Insert into tblGrocery_ values('00KC', 'Kitchen','Coffee','750g', '20','https://images-na.ssl-images-amazon.com/images/I/81c5%2BRLpNJL._SX342_.jpg'
+)
+
+Insert into tblGrocery_ values('00KM', 'Kitchen','Milk','1L' , '20',
+'https://www.clover.co.za/wp-content/uploads/2018/05/fresh-fullcream-2l.png')
+
+Insert into tblGrocery_ values('00TS', 'Toiletory','Spray','1L' , '20',
+'https://domreii.com/pub/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/g/l/glade-spray-crisp-water-spray.jpg')
+
+Insert into tblGrocery_ values('00CC', 'Cleaning','Cloth','Small' , '20',
+NULL, 65000, '5'https://images-na.ssl-images-amazon.com/images/I/81Rlmb21ovL._SX466_.jpg')
+
+
+
+
+
+Create procedure spGetGrocery_
+as
+Begin
+ Select * from tblGrocery_
+End
+Go
