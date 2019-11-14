@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace Grocery
+{
+    public class Grocery
+    {
+        public int ID { get; set; }
+        public string GroceryID { get; set; }
+        public string GroceryCategory { get; set; }
+        public string ProductName { get; set; }
+        public string ProductDescription { get; set; }
+        public string QTY { get; set; }
+        public string ProductImageUrl { get; set; }
+        
+
+       
+    }
+}
